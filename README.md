@@ -7,14 +7,14 @@
 
 环境要求：
 ---
-                -python3
-                -科学上网
+> -python3
+> -科学上网
 
 
 项目简介：
 ---
-                -项目中用到的python模块，如网络请求（requests）以及文本解析（etree）皆为python源码自带的模块，无需配置更多环境
-                -本项目爬取的网站（https://dynamicwallpaper.club） 由于服务器在国外，因此全程需要科学上网进行使用
+> -项目中用到的python模块，如网络请求（requests）以及文本解析（etree）皆为python源码自带的模块，无需配置更多环境
+> -本项目爬取的网站（https://dynamicwallpaper.club） 由于服务器在国外，因此全程需要科学上网进行使用
 
 
 爬取思路：
