@@ -14,7 +14,7 @@
 项目简介
 ---
 -项目中用到的python模块，如网络请求（requests）以及文本解析（etree）皆为python源码自带的模块，无需配置更多环境<br>
--本项目爬取的网站（https://dynamicwallpaper.club） 由于服务器在国外，因此全程需要科学上网进行使用
+-本项目爬取的网站[https://dynamicwallpaper.club](https://dynamicwallpaper.club "click me")由于服务器在国外，因此全程需要科学上网进行使用
 
 
 爬取思路
@@ -32,6 +32,6 @@
 
 更多：
 ---
--此网站所有的壁纸链接分享：点我(http://billie52707.cn/true_heic_urls.html "click me")
+-此网站所有的壁纸链接分享：[点我](http://billie52707.cn/true_heic_urls.html "click me")
 
     
