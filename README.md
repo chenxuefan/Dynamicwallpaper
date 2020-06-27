@@ -2,7 +2,7 @@
 
 项目名称：
 ---
-        下载dynamicwallpaper.club网站的动态壁纸
+        爬取dynamicwallpaper.club网站动态壁纸
 
 
 环境要求
@@ -32,6 +32,6 @@
 
 更多
 ###
--此网站所有的壁纸链接分享：[点我](http://billie52707.cn/true_heic_urls.html "click me")
+-此网站所有的壁纸链接分享：[http://billie52707.cn/true_heic_urls.html](http://billie52707.cn/true_heic_urls.html "click me")
 
     
