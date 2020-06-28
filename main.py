@@ -54,11 +54,11 @@ class Dynamicwallpaper():
         self.key=eval(r.text.replace('true','"true"'))
 
 
-    #获取必要参数val
-    def get_vals(self,page_url):
+    #获取必要参数id
+    def get_ids(self,page_url):
         r=self.session.get(url=page_url,headers=self.headers.update(self.key))
         vals=re.findall('/wallpaper/(.+)" class="link" data-v-4cc897c2>',r.text)
-        return vals
+        return ids
 
     #获取壁纸的名字
     def get_names(self,page_url):
@@ -72,13 +72,13 @@ class Dynamicwallpaper():
         return names
 
     #获取必要参数token
-    def get_token(self,val,name):
+    def get_token(self,id,name):
         try:
-            url='https://firebasestorage.googleapis.com/v0/b/dynamic-wallpapers-6a7ab.appspot.com/o/wallpapers%2F{}%2F{}.heic'.format(val,name)
+            url='https://firebasestorage.googleapis.com/v0/b/dynamic-wallpapers-6a7ab.appspot.com/o/wallpapers%2F{}%2F{}.heic'.format(id,name)
             r=self.session.get(url=url,headers=self.headers)
             token=r.json()['downloadTokens']
         except:
-            url='https://firebasestorage.googleapis.com/v0/b/dynamic-wallpapers-6a7ab.appspot.com/o/wallpapers%2F{}%2F{}%20.heic'.format(val,name)
+            url='https://firebasestorage.googleapis.com/v0/b/dynamic-wallpapers-6a7ab.appspot.com/o/wallpapers%2F{}%2F{}%20.heic'.format(id,name)
             r=self.session.get(url=url,headers=self.headers)
             token = r.json()['downloadTokens']
         return token
@@ -86,12 +86,12 @@ class Dynamicwallpaper():
     # 获取真实的动态壁纸下载链接true_heic_url
     def get_true_heic_url(self,page_url):
         #三个必要参数
-        vals = self.get_vals(page_url) #参数1、val
+        ids = self.get_vals(page_url) #参数1、id
         self.names = self.get_names(page_url) #参数2、name
         true_heic_urls=list()
 
         for i in range(len(self.names)):
-            token = self.get_token(vals[i], self.names[i]) #参数3、token
+            token = self.get_token(ids[i], self.names[i]) #参数3、token
             true_heic_urls.append('https://firebasestorage.googleapis.com/v0/b/dynamic-wallpapers-6a7ab.appspot.com/o/wallpapers%2F{}%2F{}.heic?alt=media&token={}'.format(vals[i],
                                                                                                                                                                            self.names[i],
                                                                                                                                                                            token))
