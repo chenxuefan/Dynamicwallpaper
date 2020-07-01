@@ -128,15 +128,13 @@ class Dynamicwallpaper():
         true_heic_urls = self.get_true_heic_url(page_url=page_url)
 
         #开始下载
+        f = open('true_heic_urls.txt','w',encoding='utf-8')
         for i,url in enumerate(true_heic_urls):
             #方式1、直接下载，需连接vpn下载
             # self.download('./heics',self.names[i],'heic',url)j
 
             #方式2、把下载链接保存到本地，之后读取下载链接进行下载，同样需要连接vpn
-            try:
-                with open('true_heic_urls.txt','a',encoding='utf-8')as f:f.write(self.names[i].replace('%20',' ')+'#'+url+'\n')
-            except:
-                with open('true_heic_urls.txt','w',encoding='utf-8')as f:f.write(self.names[i].replace('%20',' ')+'#'+url+'\n')
+            f.write(self.names[i].replace('%20',' ')+'#'+url+'\n')
 
         #获取页面信息
         r = requests.get(url = page_url,headers = self.headers.update(self.key))
