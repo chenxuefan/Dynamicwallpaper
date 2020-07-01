@@ -17,6 +17,12 @@
 -本项目爬取的网站：[https://dynamicwallpaper.club](https://dynamicwallpaper.club "click me")由于服务器在国外，因此全程需要科学上网进行使用
 
 
+功能简介
+---
+-爬取目标网站所有动态壁纸的下载链接
+-根据下载链接，下载并保存动态壁纸至本地heic文件（多线程）
+
+
 爬取思路
 ---
 -使用浏览器的开发者工具，捕捉到真实的壁纸下载链接<br>
@@ -32,6 +38,6 @@
 
 更多
 ---
--此网站所有的壁纸链接分享：[http://billie52707.cn/true_heic_urls.html](http://billie52707.cn/true_heic_urls.html "click me")
+-此网站所有的壁纸下载链接分享：[http://billie52707.cn/true_heic_urls.html](http://billie52707.cn/true_heic_urls.html "click me")
 
     
