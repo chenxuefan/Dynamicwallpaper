@@ -38,6 +38,6 @@
 
 更多
 ---
-- 此网站所有的壁纸下载链接分享：[https://billie52707.cn/true_heic_urls.html](https://billie52707.cn/true_heic_urls.html "click me")
+- 此网站所有的壁纸下载链接分享：[https://download.billie52707.cn/true_heic_urls.html](https://download.billie52707.cn/true_heic_urls.html "click me")
 
     
