@@ -1,6 +1,7 @@
 # Dynamicwallpaper
 ## 🍑 详细介绍
 [python学习笔记 | macOS Big Sur动态壁纸食用指南 ](https://billie52707.cn/2020/06/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-macos-big-sur%E5%8A%A8%E6%80%81%E5%A3%81%E7%BA%B8%E9%A3%9F%E7%94%A8%E6%8C%87%E5%8D%97/)
+
 环境要求
 ---
 - python3
